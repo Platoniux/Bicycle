@@ -1,0 +1,16 @@
+.bicycle_bg {
+  background: url(../img/section_bg_wheel.png) center center no-repeat;
+  background-size: cover;
+
+  &__bicycle_company_bg {
+    display: none;
+    
+
+    @include lg {
+      display: block;
+      margin: auto;
+      width: 113px;
+      height: 118px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.bicycle_frame::after {
+  content: '';
+  position: absolute;
+  left: 47%;
+  top: -300%;
+  width: 41px;
+  height: 30px;
+  background: url(../img/bicycle_frame.png) center center no-repeat;
+
+  @include lg {
+    left: 46%;
+  }
+}

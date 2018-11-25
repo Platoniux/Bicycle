@@ -1,0 +1,13 @@
+.second_bicycle_bg {
+  background: url(../img/article_bg_bicycle.png) center center no-repeat;
+  background-size: cover;
+
+  &__vintage_logo {
+    display: none;
+
+    @include lg {
+      display: block;
+      margin: auto;
+    }
+  }
+}

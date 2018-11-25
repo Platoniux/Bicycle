@@ -1,0 +1,24 @@
+.design_logo {
+  display: flex;
+  align-items: center;
+  
+
+  &__sign {
+    display: inline-block;
+    width: 100%;
+    font-size: $small-font;
+    font-style: italic;
+    color: $light-grey-text;
+  }
+
+  &__logolink {
+    max-width: 55px;
+    width: 100%;
+    margin-left: 2%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.slider {
+  display: none;
+  background-color: $grey-bg;
+
+  @include lg {
+    position: relative;
+    display: block;
+  }
+  // iputs
+  &__switch_input {
+    display: none;
+    // position: absolute;
+    // left: -999px;
+  }
+  // block of labels 
+  &__switch {
+    position: absolute;
+    left: 0;
+    bottom: 13%;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__slider_inner {
+    overflow: hidden;
+  }
+
+  &__slides {
+    display: flex;
+    width: 300vw;
+    transition: all 0.5s;
+  }
+}
+
+
+// .slide {
+//   width: 680px;
+//   float: left;
+// }
+
+  #btn_one:checked ~ .slider_inner .slides {
+    transform: translate(0);
+  }
+
+  #btn_two:checked ~.slider_inner .slides {
+    transform: translate(-100vw);
+  }
+
+  #btn_three:checked ~.slider_inner .slides {
+    transform: translate(-200vw);
+  }
+

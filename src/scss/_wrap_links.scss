@@ -1,0 +1,25 @@
+.wrap_links {
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__link {
+    margin: 2%;
+
+    @include md {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+
+  &__link--white_lg {
+    @include md {
+      max-width: 369px;
+      width: 100%;
+    }
+  }
+}

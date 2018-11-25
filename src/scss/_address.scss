@@ -1,0 +1,16 @@
+.address {
+  font-size: $small-font;
+  font-style: italic;
+  color: $light-grey-text;
+
+  &__headline {
+    font-size: $middle-font;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  &__mailto {
+    text-decoration: none;
+    color: inherit;
+  }
+}

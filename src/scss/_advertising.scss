@@ -1,0 +1,103 @@
+.advertising {
+  padding: 25vw 0 20vw;
+  background: white;
+
+  @include sm {
+    padding: 20vw 0 15vw;
+  }
+
+  @include md {
+    padding: 15vw 0 10vw;
+  }
+
+  @include lg {
+    padding: 10vw 3vw 9vw;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 96%;
+    left: 46%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    transform: rotate(45deg);
+
+    @include md {
+      top: 95%;
+      left: 48%;
+    }
+
+    @include lg {
+      top: 97%;
+      left: 49%;
+    }
+
+    @include xl {
+      top: 96%;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 44%;
+    top: 86%;
+    width: 50px;
+    height: 1px;
+    background: url(../img/line.png);
+
+    @include sm {
+      left: 45%;
+    }
+
+    @include md {
+      left: 47%;
+    }
+
+    @include lg {
+      top: 87%;
+    }
+
+    @include xl {
+      top: 85%;
+    }
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 398px;
+    width: 100%;
+
+    @include sm {
+      max-width: 500px;
+      width: 100%;
+    }
+
+    @include md {
+      max-width: 700px;
+      width: 100%;
+    }
+
+    @include lg {
+      max-width: 398px;
+      width: 100%;
+    }
+  }
+
+  &__adv_headline {
+    margin-bottom: 3vw;
+
+    @include xl {
+      margin: 0;
+    }
+  }
+
+  &__adv_paragraph {
+    @include xl {
+      transition: 0.5s linear;
+    }
+  }
+
+}

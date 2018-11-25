@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  padding-bottom: 45%;
+  background: url(../img/header_bg.png) no-repeat center center;
+  background-size: cover;
+
+  &__nav {
+    margin: 2% auto 0;
+  }
+}

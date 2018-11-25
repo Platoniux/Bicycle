@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  & a {
+    text-decoration: none;
+    color: $grey-text;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin: 0 5vw;
+    max-width: 94px;
+    width: 15vw;
+  }
+
+  &__logo img {
+    width: 100%;
+    height: auto;
+  }
+}

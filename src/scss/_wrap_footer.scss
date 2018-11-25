@@ -1,0 +1,32 @@
+.wrap_footer {
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__address {
+    margin-bottom: 7%;
+
+    @include md {
+      margin-bottom: 0;
+    }
+  }
+
+  &__social_container {
+    margin-bottom: 7%;
+
+    @include md {
+      margin-bottom: 0;
+      margin-right: 10%;
+      align-self: flex-end;
+    }
+  }
+
+  &__design_logo {
+    width: 100%;
+    max-width: 155px;
+  }
+}

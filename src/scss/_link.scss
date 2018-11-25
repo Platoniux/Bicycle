@@ -1,0 +1,15 @@
+.link {
+  display: inline-block;
+  padding: 20px 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: $small-font;
+  letter-spacing: $letter-spacing-links;
+  color: $green-text;
+  border: 1px solid $green-text;
+
+  &:hover {
+    background: $green-text;
+    color: $black-section;
+  }
+}

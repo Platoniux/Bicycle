@@ -1,0 +1,52 @@
+.first_offer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+
+  @include xl {
+    &__advertising:hover {
+      // z-index: 100;
+      height: 120%;
+      padding-bottom: 2vw;
+    }
+
+    &__advertising:hover::after {
+      top: 97%;
+    }
+
+    &__advertising:hover .adv_paragraph {
+      height: 17vw;
+    }
+  }
+
+  &__bicycle_bg {
+    display: none;
+
+    @include lg {
+      display: flex;
+      grid-area: 1 / 1 / -1 / 3;
+    }
+  }
+
+  &__advertising {
+    position: relative;
+    height: 100%;
+    grid-area: 1 / 1 / 3 / -1;
+
+    @include lg {
+      grid-area: 1 / 3 / 3 / -1;
+    }
+
+    @include xl {
+      transition: 0.5s linear;
+    }
+  }
+
+  &__seat_bg {
+    grid-area: 3 / 1 / -1 / -1;
+
+    @include lg {
+      grid-area: 3 / 3 / -1 / -1;
+    } 
+  }
+}

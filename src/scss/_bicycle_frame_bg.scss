@@ -1,0 +1,10 @@
+.bicycle_frame_bg {
+  background: url(../img/article_bg_fork.png) center center no-repeat;
+  background-size: cover;
+
+  &__bicycles_logo {
+    width: 208px;
+    height: 67px;
+    margin: auto;
+  }
+}

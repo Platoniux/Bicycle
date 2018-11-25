@@ -1,0 +1,28 @@
+.form_container {
+  display: flex;
+  padding: 0 2%;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+  }
+
+  &__input_mail {
+    margin-bottom: 2%;
+    width: 100%;
+
+    @include md {
+      margin-bottom: 0;
+      margin-right: 2%;
+      max-width: 400px;
+    }
+  }
+
+  &__button_mail {
+    width: 100%;
+
+    @include md {
+      max-width: 127px;
+    }
+  }
+}

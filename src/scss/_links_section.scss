@@ -1,0 +1,12 @@
+.links_section {
+  padding: 15% 0 15%;
+  background-color: $black-section;
+
+  @include rwd(700) {
+    padding: 10% 0 10%;
+  }
+
+  @include rwd(900) {
+    padding: 5% 0 5%;
+  }
+}

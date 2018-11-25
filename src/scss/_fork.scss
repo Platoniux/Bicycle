@@ -1,0 +1,9 @@
+.fork::after {
+  content: '';
+  position: absolute;
+  left: 48%;
+  top: -340%;
+  width: 23px;
+  height: 41px;
+  background: url(../img/fork.png) center center no-repeat;
+}

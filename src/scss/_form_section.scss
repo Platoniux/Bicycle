@@ -1,0 +1,44 @@
+.form_section {
+  display: flex;
+  padding: 20% 0;
+  flex-direction: column;
+  align-items: center;
+
+  @include md {
+    padding: 13% 0;
+  }
+
+  @include lg {
+    padding: 7% 0;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 5%;
+
+    @include md {
+      margin-bottom: 3%;
+    }
+
+    @include lg {
+      margin-bottom: 1%;
+    }
+  }
+
+  &__tagline {
+    margin-bottom: 5%;
+
+    @include md {
+      margin-bottom: 3%;
+    }
+
+    @include lg {
+      margin-bottom: 1%;
+    }
+  }
+
+  &__form_container {
+    max-width: 535px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+.roulette::after {
+  content: '';
+  position: absolute;
+  left: 46%;
+  top: -300%;
+  width: 32px;
+  height: 32px;
+  background: url(../img/roulette.png) center center no-repeat;
+
+  @include md {
+    left: 47.5%;
+  }
+
+  @include xl {
+    left: 46%;
+  }
+}

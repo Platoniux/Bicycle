@@ -1,0 +1,31 @@
+// FOR MEDIA QUERIES
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// other variables
+// typography
+$the-smallest-font: 13px;
+$small-font: 14px;
+$middle-font: 16px;
+$big-font: 18px;
+$the-biggest-font: 24px;
+$general-line-height: 34px;
+$general-letter-spacing: 1.8px;
+$letter-spacing-links: 2.8px;
+
+
+// colors
+$grey-text: #4d4959;
+$grey-bg: #f7f7f7;
+$black-text: #353738;
+$light-grey-text: #848789;
+$dark-grey-switch: #a9afb3;
+$black-section: #282f35;
+$green-text: #64c29e;
+$border-iput: #d3d7d9;

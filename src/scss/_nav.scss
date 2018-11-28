@@ -2,6 +2,49 @@
   display: flex;
   justify-content: space-between;
 
+  &__navgroup {
+    display: flex;
+    align-items: center;
+    font-size: $mobile-font;
+    font-weight: bold;
+    list-style-type: none;
+
+    & li:first-child {
+      text-align: center;
+    }
+
+    & li:nth-child(2) {
+      margin: 0 3vw;
+    }
+
+    & li a {
+      position: relative;
+    }
+
+    & li a::after {
+      content: '';
+      position: absolute;
+      top: -40px;
+      left: -12px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      border: 1px solid $grey-text;
+      background-color: $grey-text;
+      transition: all 0.2s linear;
+      opacity: 0;
+    }
+
+    & li a:hover::after {
+      top: 5px;
+      opacity: 1;
+    }
+
+    @include sm {
+      font-size: $the-smallest-font;
+    }
+  }
+
   & a {
     text-decoration: none;
     color: $grey-text;
@@ -12,6 +55,8 @@
     margin: 0 5vw;
     max-width: 94px;
     width: 15vw;
+    // 
+    align-self: flex-start;
   }
 
   &__logo img {

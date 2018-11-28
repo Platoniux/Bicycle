@@ -88,16 +88,83 @@
 
   &__adv_headline {
     margin-bottom: 3vw;
+    position: relative;
+    font-size: $big-font;
+    font-weight: bold;
+    color: $black-text;
+    text-align: center;
+
+    @include md {
+      font-size: $middle-font;
+    }
 
     @include xl {
       margin: 0;
     }
-  }
 
-  &__adv_paragraph {
-    @include xl {
-      transition: 0.5s linear;
+    &--bicycle_frame::after {
+      content: '';
+      position: absolute;
+      left: 47%;
+      top: -300%;
+      width: 41px;
+      height: 30px;
+      background: url(../img/bicycle_frame.png) center center no-repeat;
+
+      @include lg {
+        left: 46%;
+      }
+    }
+
+    &--roulette::after {
+      content: '';
+      position: absolute;
+      left: 46%;
+      top: -300%;
+      width: 32px;
+      height: 32px;
+      background: url(../img/roulette.png) center center no-repeat;
+
+      @include md {
+        left: 47.5%;
+      }
+
+      @include xl {
+        left: 46%;
+      }
+    }
+
+    &--fork::after {
+      content: '';
+      position: absolute;
+      left: 48%;
+      top: -340%;
+      width: 23px;
+      height: 41px;
+      background: url(../img/fork.png) center center no-repeat;
     }
   }
 
+  &__adv_paragraph {
+    position: relative;
+    padding: 0 1vw;
+    line-height: $general-line-height;
+    font-size: $small-font;
+    color: $light-grey-text;
+    text-align:  justify;
+    vertical-align: text-top;
+
+
+    @include md {
+      font-size: $middle-font;
+    }
+
+    @include xl {
+      height: 10vw;
+      white-space: pre-line;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: 0.5s linear;
+    }
+  }
 }

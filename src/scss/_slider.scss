@@ -1,27 +1,51 @@
 .slider {
-  display: none;
+  // display: none;
+  position: relative;
+    display: block;
   background-color: $grey-bg;
 
-  @include lg {
-    position: relative;
-    display: block;
-  }
   // iputs
   &__switch_input {
     display: none;
-    // position: absolute;
-    // left: -999px;
   }
   // block of labels 
   &__switch {
     position: absolute;
     left: 0;
-    bottom: 13%;
+    bottom: 3%;
     width: 100%;
     text-align: center;
+
+    @include sm {
+      bottom: 10%;
+    }
+  }
+
+  &__labels {
+    display: inline-block; 
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid $dark-grey-switch;
+    background-color: $grey-bg;
+
+    #btn_one:checked ~ .slider__switch &--first {
+      background: $dark-grey-switch;
+    }
+
+    #btn_two:checked ~ .slider__switch &--second {
+      background: $dark-grey-switch;
+    }
+
+    #btn_three:checked ~ .slider__switch &--third {
+      background: $dark-grey-switch;
+    }
   }
 
   &__slider_inner {
+    padding: 8vw 0 13vw;
     overflow: hidden;
   }
 
@@ -30,23 +54,25 @@
     width: 300vw;
     transition: all 0.5s;
   }
-}
 
+  &__slide {
+    width: 100vw;
+  }
 
-// .slide {
-//   width: 680px;
-//   float: left;
-// }
-
-  #btn_one:checked ~ .slider_inner .slides {
+  #btn_one:checked ~ &__slider_inner &__slides {
     transform: translate(0);
   }
 
-  #btn_two:checked ~.slider_inner .slides {
+  #btn_two:checked ~ &__slider_inner &__slides {
     transform: translate(-100vw);
   }
 
-  #btn_three:checked ~.slider_inner .slides {
+  #btn_three:checked ~ &__slider_inner &__slides {
     transform: translate(-200vw);
   }
+}
+
+
+
+
 

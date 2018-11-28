@@ -1,27 +1,37 @@
 .link_shop_now {
   position: relative;
 
-  &:hover::after {
+  &::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     width: 98px;
-    height: 55px;
+    height: 62px;
+    opacity: 0;
     background: url(../img/icon_shop_now.png) center center no-repeat;
     transform: translate(-50%, -50%);
-
-    
+    transition: all 0.5s;
   }
 
-  &:hover::before {
+  &::before {
     content: '';
     position: absolute;
     width: 100%;
     left: 0;
     top: 0;
     height: 100%;
+    opacity: 0;
     background: url(../img/shop_hover.png) center center no-repeat;
     background-size: cover;
+    transition: all 0.5s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:hover::before {
+    opacity: 1;
   }
 }

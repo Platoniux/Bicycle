@@ -7,9 +7,22 @@
   letter-spacing: $letter-spacing-links;
   color: $green-text;
   border: 1px solid $green-text;
+  transition: transform 0.3s linear;
 
   &:hover {
     background: $green-text;
     color: $black-section;
+    transform: scale(1.1);
+  }
+
+  &--white_lg {
+    padding: 20px 0;
+    color: white;
+    border-color: white;
+
+    &:hover {
+      background: white;
+      color: $black-section;
+    }
   }
 }

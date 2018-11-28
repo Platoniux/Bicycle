@@ -6,10 +6,10 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Bicycle</title>
 </head>
-<body>
+<body class="page">
   <header class="header">
     <nav class="nav header__nav">
-      <ul class="navgroup header__navgroup">
+      <ul class="nav__navgroup">
         <li>
           <a href="#">
             ABOUT US
@@ -27,7 +27,7 @@
       <a class="nav__logo" href="#">
         <img src="image/logo.png" alt="logo_of_bicycle_company">
       </a>
-      <ul class="navgroup header__navgroup">
+      <ul class="nav__navgroup">
         <li>
           <a href="#">
             SHOP
@@ -45,11 +45,11 @@
     </nav>
   </header>
   <section class="intro">
-    <div class="text_intro body__container">
-      <h1 class="headline text_intro__headline">
+    <div class="text_intro page__container">
+      <h1 class="text_intro__headline">
         A NEW GENERATION OF VINTAGE BIKE
       </h1>
-      <p class="greating">
+      <p class="text_intro__greating">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
       </p>
     </div>
@@ -62,10 +62,10 @@
     </div>
     <article class="advertising first_offer__advertising">
       <div class="advertising__container">
-        <h2 class="adv_headline advertising__adv_headline bicycle_frame">
+        <h2 class="advertising__adv_headline advertising__adv_headline--bicycle_frame">
           VITAGE OLIVA
         </h2>
-        <p class="adv_paragraph advertising__adv_paragraph">
+        <p class="advertising__adv_paragraph">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
         </p>
       </div>
@@ -77,10 +77,10 @@
   <section class="second_offer">
     <article class="advertising second_offer__advertising">
       <div class="advertising__container">
-        <h2 class="adv_headline advertising__adv_headline roulette">
+        <h2 class="advertising__adv_headline advertising__adv_headline--roulette">
           LA BORIOSA
         </h2>
-        <p class="adv_paragraph advertising__adv_paragraph">
+        <p class="advertising__adv_paragraph">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
         </p>
       </div>
@@ -102,10 +102,10 @@
     </div>
     <article class="advertising third_offer__advertising">
       <div class="advertising__container">
-        <h2 class="adv_headline  advertising__adv_headline fork">
+        <h2 class="advertising__adv_headline advertising__adv_headline--fork">
           RETRO BIKE - M. HULOT
         </h2>
-        <p class="adv_paragraph advertising__adv_paragraph">
+        <p class="advertising__adv_paragraph">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
         </p>
       </div>
@@ -121,58 +121,58 @@
     <input type="radio" name="switch" id="btn_one" class="slider__switch_input" checked>
     <input type="radio" name="switch" id="btn_two" class="slider__switch_input">
     <input type="radio" name="switch" id="btn_three" class="slider__switch_input">
-    <div class="switch slider__switch">
-      <label class="labels label_one switch__label_one" for="btn_one"></label>
-      <label class="labels label_two switch__label_two" for="btn_two"></label>
-      <label class="labels label_three switch__label_three" for="btn_three"></label>
+    <div class="slider__switch">
+      <label class="slider__labels slider__labels--first" for="btn_one"></label>
+      <label class="slider__labels slider__labels--second" for="btn_two"></label>
+      <label class="slider__labels slider__labels--third" for="btn_three"></label>
     </div>
-    <div class="slider_inner slider__slider_inner">
-      <div class="slides slider__slides">
-        <div class="slide slides__slide">
+    <div class="slider__slider_inner">
+      <div class="slider__slides">
+        <div class="slide slider__slide">
           <a href="#" class="twitter_link slide__twitter_link">
             <img src="image/twitter_icon.png" alt="icon_of_twitter">
           </a>
           <p class="slide__authorlink">
-            <a href="#" class="nick_name slide__nick_name">
+            <a href="#" class="slide__nick_name">
               AOD New York  @aod
             </a>
-            <span class="time slide__time">
+            <span class="slide__time">
               /  35 min
             </span>
           </p>
-          <p class="massage slide__massage">
+          <p class="slide__massage">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
           </p>
         </div>
-        <div class="slide slides__slide">
+        <div class="slide slider__slide">
           <a href="#" class="twitter_link slide__twitter_link">
             <img src="image/twitter_icon.png" alt="icon_of_twitter">
           </a>
           <p class="slide__authorlink">
-            <a href="#" class="nick_name slide__nick_name">
+            <a href="#" class="slide__nick_name">
               TwinkyWinky Kyoto  @twinky
             </a>
-            <span class="time slide__time">
+            <span class="slide__time">
               /  2 h
             </span>
           </p>
-          <p class="massage slide__massage">
+          <p class="slide__massage">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
           </p>
         </div>
-        <div class="slide slides__slide">
+        <div class="slide slider__slide">
           <a href="#" class="twitter_link slide__twitter_link">
             <img src="image/twitter_icon.png" alt="icon_of_twitter">
           </a>
           <p class="slide__authorlink">
-            <a href="#" class="nick_name slide__nick_name">
+            <a href="#" class="slide__nick_name">
               Sauron Mordor  @sauron1488
             </a>
-            <span class="time slide__time">
+            <span class="slide__time">
               /  5 years
             </span>
           </p>
-          <p class="massage slide__massage">
+          <p class="slide__massage">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
           </p>
         </div>
@@ -206,7 +206,7 @@
       </a>
   </section>
   <section class="links_section">
-    <div class="wrap_links body__container">
+    <div class="wrap_links page__container">
       <a href="#" class="link wrap_links__link">
         VISIT US
       </a>
@@ -233,7 +233,7 @@
     </form>
   </section>
   <footer class="footer">
-    <div class="wrap_footer body__container">
+    <div class="wrap_footer page__container">
       <address class="address wrap_footer__address">
         <span class="address__headline">AOD New York</span><br>
         2250 Lexington Avenue<br>

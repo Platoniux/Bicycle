@@ -14,5 +14,40 @@
 
   &__authorlink {
     margin-bottom: 1.2%;
+    text-align: center;
+  }
+
+  &__nick_name {
+    text-decoration: none;
+    color: $black-text;
+    font-weight: bold;
+    font-size: $middle-font;
+    letter-spacing: $general-letter-spacing;
+
+    @include md {
+     font-size: $big-font; 
+    }
+  }
+
+  &__time {
+    color: $light-grey-text;
+    letter-spacing: $general-letter-spacing;
+    font-size: $middle-font;
+
+    @include md {
+     font-size: $big-font; 
+    }
+  }
+
+  &__massage {
+    font-size: $middle-font;
+    line-height: $general-line-height;
+    font-style: italic;
+    text-align: center;
+    color: $light-grey-text;
+
+    @include md {
+      font-size: $the-biggest-font;
+    }
   }
 }

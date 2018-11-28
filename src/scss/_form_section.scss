@@ -27,6 +27,10 @@
 
   &__tagline {
     margin-bottom: 5%;
+    font-size: $the-biggest-font;
+    color: $light-grey-text;
+    font-style: italic;
+    line-height: $general-line-height;
 
     @include md {
       margin-bottom: 3%;

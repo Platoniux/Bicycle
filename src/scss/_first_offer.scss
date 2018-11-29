@@ -5,17 +5,12 @@
 
   @include xl {
     &__advertising:hover {
-      // z-index: 100;
       height: 120%;
       padding-bottom: 2vw;
     }
 
     &__advertising:hover::after {
       top: 97%;
-    }
-
-    &__advertising:hover .adv_paragraph {
-      height: 17vw;
     }
   }
 
@@ -25,6 +20,21 @@
     @include lg {
       display: flex;
       grid-area: 1 / 1 / -1 / 3;
+      background: url(../img/section_bg_wheel.png) center center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__bicycle_company_bg {
+    display: none;
+
+    @include lg {
+      display: block;
+      margin: auto;
+      width: 113px;
+      height: 118px;
+      background: url(../img/bicycle_company.png) center center no-repeat;
+      background-size: cover;
     }
   }
 
@@ -44,6 +54,8 @@
 
   &__seat_bg {
     grid-area: 3 / 1 / -1 / -1;
+    background: url(../img/article_bg_seat.png) center center no-repeat;
+    background-size: cover;
 
     @include lg {
       grid-area: 3 / 3 / -1 / -1;

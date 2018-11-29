@@ -3,10 +3,6 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
-  & a {
-    line-height: 0;
-  }
-
   &__first_imglink_shop {
     grid-area: 1 / 1 / 2 / 4;
 

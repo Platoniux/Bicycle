@@ -104,19 +104,23 @@ input {
   list-style-type: none;
 }
 
-.nav__navgroup li:first-child {
-  text-align: center;
+@media (min-width: 576px) {
+  .nav__navgroup {
+    font-size: 13px;
+  }
 }
 
-.nav__navgroup li:nth-child(2) {
+.nav__item--decor {
   margin: 0 3vw;
 }
 
-.nav__navgroup li a {
+.nav__item-link {
   position: relative;
+  text-decoration: none;
+  color: #4d4959;
 }
 
-.nav__navgroup li a::after {
+.nav__item-link::after {
   content: '';
   position: absolute;
   top: -40px;
@@ -133,20 +137,9 @@ input {
   opacity: 0;
 }
 
-.nav__navgroup li a:hover::after {
+.nav__item-link:hover::after {
   top: 5px;
   opacity: 1;
-}
-
-@media (min-width: 576px) {
-  .nav__navgroup {
-    font-size: 13px;
-  }
-}
-
-.nav a {
-  text-decoration: none;
-  color: #4d4959;
 }
 
 .nav__logo {
@@ -159,7 +152,7 @@ input {
   align-self: flex-start;
 }
 
-.nav__logo img {
+.nav__logo-img {
   width: 100%;
   height: auto;
 }
@@ -278,9 +271,6 @@ input {
   .first_offer__advertising:hover::after {
     top: 97%;
   }
-  .first_offer__advertising:hover .adv_paragraph {
-    height: 17vw;
-  }
 }
 
 .first_offer__bicycle_bg {
@@ -294,6 +284,25 @@ input {
     display: -ms-flexbox;
     display: flex;
     grid-area: 1 / 1 / -1 / 3;
+    background: url(../img/section_bg_wheel.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}
+
+.first_offer__bicycle_company_bg {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .first_offer__bicycle_company_bg {
+    display: block;
+    margin: auto;
+    width: 113px;
+    height: 118px;
+    background: url(../img/bicycle_company.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
 }
 
@@ -319,6 +328,9 @@ input {
 
 .first_offer__seat_bg {
   grid-area: 3 / 1 / -1 / -1;
+  background: url(../img/article_bg_seat.png) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 @media (min-width: 992px) {
@@ -542,41 +554,10 @@ input {
   }
 }
 
-.seat_bg {
-  background: url(../img/article_bg_seat.png) center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.second_seat_bg {
-  background: url(../img/article_bg_seat2.png) center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.bicycle_bg {
-  background: url(../img/section_bg_wheel.png) center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.bicycle_bg__bicycle_company_bg {
-  display: none;
-}
-
-@media (min-width: 992px) {
-  .bicycle_bg__bicycle_company_bg {
-    display: block;
-    margin: auto;
-    width: 113px;
-    height: 118px;
+@media (min-width: 1200px) {
+  .advertising:hover .advertising__adv_paragraph {
+    height: 17vw;
   }
-}
-
-.bicycle_company_bg {
-  background: url(../img/bicycle_company.png) center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
 }
 
 .second_offer {
@@ -620,6 +601,9 @@ input {
 
 .second_offer__second_seat_bg {
   grid-area: 3 / 1 / -1 / -1;
+  background: url(../img/article_bg_seat2.png) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 @media (min-width: 992px) {
@@ -639,32 +623,26 @@ input {
     display: -ms-flexbox;
     display: flex;
     grid-area: 1 / 2 / -1 / -1;
+    background: url(../img/article_bg_bicycle.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
 }
 
-.second_bicycle_bg {
-  background: url(../img/article_bg_bicycle.png) center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.second_bicycle_bg__vintage_logo {
+.second_offer__vintage_logo {
   display: none;
 }
 
 @media (min-width: 992px) {
-  .second_bicycle_bg__vintage_logo {
+  .second_offer__vintage_logo {
     display: block;
     margin: auto;
+    width: 177px;
+    height: 152px;
+    background: url(../img/vintage.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
-}
-
-.vintage_logo {
-  width: 177px;
-  height: 152px;
-  background: url(../img/vintage.png) center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
 }
 
 .third_offer {
@@ -697,7 +675,19 @@ input {
     display: -ms-flexbox;
     display: flex;
     grid-area: 1 / 1 / -1 / 2;
+    background: url(../img/article_bg_fork.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
+}
+
+.third_offer__bicycles_logo {
+  width: 208px;
+  height: 67px;
+  margin: auto;
+  background: url(../img/bicycles.png) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .third_offer__advertising {
@@ -722,6 +712,9 @@ input {
 
 .third_offer__mavic_bg {
   grid-area: 3 / 1 / -1 / -1;
+  background: url(../img/mavic.png) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 @media (min-width: 992px) {
@@ -738,37 +731,10 @@ input {
   .third_offer__full_bicycle_bg {
     display: block;
     grid-area: 1 / 3 / -1 / -1;
+    background: url(../img/article_bg_bicycle2.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
-}
-
-.mavic_bg {
-  background: url(../img/mavic.png) center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.bicycle_frame_bg {
-  background: url(../img/article_bg_fork.png) center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.bicycle_frame_bg__bicycles_logo {
-  width: 208px;
-  height: 67px;
-  margin: auto;
-}
-
-.bicycles_logo {
-  background: url(../img/bicycles.png) center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.full_bicycle_bg {
-  background: url(../img/article_bg_bicycle2.png) center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
 }
 
 .slider {
@@ -934,10 +900,6 @@ input {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
-}
-
-.shop a {
-  line-height: 0;
 }
 
 .shop__first_imglink_shop {
@@ -1439,15 +1401,15 @@ input {
   margin-right: 3%;
 }
 
-.social_container__social_link img {
-  width: 100%;
-  height: auto;
-}
-
 @media (min-width: 768px) {
   .social_container__social_link {
     margin-right: 6%;
   }
+}
+
+.social_container__img {
+  width: 100%;
+  height: auto;
 }
 
 .design_logo {

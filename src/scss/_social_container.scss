@@ -7,13 +7,13 @@
     width: 100%;
     margin-right: 3%;
 
-    img {
-      width: 100%;
-      height: auto;
-    }
-
     @include md {
       margin-right: 6%;
     }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
   }
 }

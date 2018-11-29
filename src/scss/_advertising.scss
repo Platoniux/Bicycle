@@ -167,4 +167,11 @@
       transition: 0.5s linear;
     }
   }
+
+  &:hover &__adv_paragraph {
+
+    @include xl {
+      height: 17vw;
+    }
+  }
 }

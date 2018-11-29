@@ -1,5 +1,4 @@
 .slider {
-  // display: none;
   position: relative;
     display: block;
   background-color: $grey-bg;
@@ -8,6 +7,7 @@
   &__switch_input {
     display: none;
   }
+  
   // block of labels 
   &__switch {
     position: absolute;

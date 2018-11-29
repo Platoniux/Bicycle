@@ -6,7 +6,6 @@
 
   @include xl {
     &__advertising:hover {
-      // z-index: 100;
       height: 120%;
       padding-bottom: 2vw;
     }
@@ -36,6 +35,8 @@
 
   &__second_seat_bg {
     grid-area: 3 / 1 / -1 / -1;
+    background: url(../img/article_bg_seat2.png) center center no-repeat;
+    background-size: cover;
 
     @include lg {
       grid-area: 3 / 1 / -1 / 2;
@@ -48,6 +49,21 @@
     @include lg {
       display: flex;
       grid-area: 1 / 2 / -1 / -1;
+      background: url(../img/article_bg_bicycle.png) center center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__vintage_logo {
+    display: none;
+
+    @include lg {
+      display: block;
+      margin: auto;
+      width: 177px;
+      height: 152px;
+      background: url(../img/vintage.png) center center no-repeat;
+      background-size: cover;
     }
   }
 }

@@ -17,8 +17,54 @@
   &__item {
 
     &--decor {
-      margin: 0 3vw;
+      position: relative;
+      margin-right: 12px;
+
+      @include sm {
+        margin-right: 50px;
+      }
+
+      @include md {
+        margin-right: 70px;
+      }
     }
+
+    &--first-point::after {
+
+        @include sm {
+          content: '';
+          position: absolute;
+          top: 7px;
+          left: 135%;
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          border: 1px solid $grey-text;
+          background-color: $grey-text;
+        }
+
+        @include md {
+          left: 145%;
+        }
+      }
+
+      &--second-point::after {
+        @include sm {
+          content: '';
+          position: absolute;
+          top: 7px;
+          left: 165%;
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          border: 1px solid $grey-text;
+          background-color: $grey-text;
+        }
+
+        @include md {
+          left: 185%;
+        }
+      }
   }
 
   &__item-link {
@@ -27,6 +73,8 @@
     color: $grey-text;
 
     &::after {
+      @include sm {
+
       content: '';
       position: absolute;
       top: -40px;
@@ -38,6 +86,7 @@
       background-color: $grey-text;
       transition: all 0.2s linear;
       opacity: 0;
+      }
     }
 
     &:hover::after {
